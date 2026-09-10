@@ -1,0 +1,122 @@
+[
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for developing, shipping, and running applications using containers.",
+    "icon": "/Icon/Docker.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "category": "Backend",
+    "description": "A powerful object-oriented programming language used for building reliable applications.",
+    "icon": "/Icon/Java.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Frontend",
+    "description": "A versatile programming language used to create interactive and dynamic web applications.",
+    "icon": "/Icon/JavaScript.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner",
+    "badge": "Popular"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Fullstack",
+    "description": "A React framework for building fast and user-friendly web applications.",
+    "icon": "/Icon/Next.js.svg",
+    "rating": 4.9,
+    "difficulty": "Advanced",
+    "badge": "Popular"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime built on Chrome's V8 engine for scalable network applications.",
+    "icon": "/Icon/Node.js.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful, open-source object-relational database system.",
+    "icon": "/Icon/PostgressQL.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "description": "A JavaScript library for building user interfaces and interactive components.",
+    "icon": "/Icon/React.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Database",
+    "description": "An in-memory data structure store used as a database, cache, and message broker.",
+    "icon": "/Icon/Redis.svg",
+    "rating": 4.6,
+    "difficulty": "Advanced",
+    "badge": "New"
+  },
+  {
+    "id": "svelte",
+    "name": "Svelte",
+    "category": "Frontend",
+    "description": "A radical new approach to building user interfaces that compiles down to tiny vanilla JS.",
+    "icon": "/Icon/Svelte.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner",
+    "badge": "New"
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
+    "icon": "/Icon/Tailwind CSS.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner",
+    "badge": "Popular"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Languages",
+    "description": "A typed superset of JavaScript that compiles to plain JavaScript.",
+    "icon": "/Icon/TypeScript.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "vue",
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "The progressive JavaScript framework for building modern web user interfaces.",
+    "icon": "/Icon/Vue.js.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  }
+]
