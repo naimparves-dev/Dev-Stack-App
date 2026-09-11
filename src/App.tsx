@@ -2,8 +2,9 @@
 import { Suspense } from "react"
 import { Hero } from "./Component/Hero"
 import Nav from "./Component/Nav"
-import Technologies from "./Component/Technologies"
+import Technologies from "./Component/Technologies/Technologies"
 import type { Technology } from "./Type"
+import { Footer } from "./Component/Footer"
 
 const TechnologiesFetch = async (): Promise<Technology[]> => {
   const res = await fetch("/Technologies.json")
@@ -22,6 +23,7 @@ function App() {
       <Suspense>
         <Technologies TechnologiesPromise={TechnologiesPromise}></Technologies>
       </Suspense>
+      <Footer></Footer>
     </>
   )
 }

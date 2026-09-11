@@ -1,7 +1,7 @@
-import { use } from "react";
-import type { Technology } from "../Type";
-import TechnologyCard from "./TechnologyCard";
-import YourStackCard from "./YourStackCard";
+import { use, useState } from "react";
+import type { Technology } from "../../Type";
+import AllTechnologyCard from "./AllTechnologyCard";
+import YourStacks from "../Technologies/YourStacks";
 
 
 export interface TechnologiesProps {
@@ -10,7 +10,7 @@ export interface TechnologiesProps {
 
 const Technologies = ({ TechnologiesPromise }: TechnologiesProps) => {
     const Technologies = use(TechnologiesPromise)
-    console.log(Technologies, "ddddddddddddddd");
+    const [SelectedTecnologies, setSelectedTecnologies] =useState<Technology[]>([])
 
     return (
         <section className="max-w-[1200px] mx-auto px-5 mt-20">
@@ -22,18 +22,18 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesProps) => {
             </h2>
             <p className="mt-1 text-sm text-gray-500">Pick one technology per category to build your ideal stack.</p>
 
-            <div className="grid grid-cols-12 gap-7">
+            <div className="grid grid-cols-12 gap-7 items-start">
 
                 {/* left side explore all*/}
                 <div className="grid col-span-9">
-                    <TechnologyCard Technologies={Technologies}></TechnologyCard>
+                    <AllTechnologyCard Technologies={Technologies} SelectedTecnologies={SelectedTecnologies} setSelectedTecnologies={setSelectedTecnologies}></AllTechnologyCard>
 
                 </div>
 
 
                 {/* right side for your stack */}
-                <div className="grid col-span-3">
-                    <YourStackCard Technologies={Technologies}></YourStackCard>
+                <div className="grid col-span-3 mt-8 ">
+                    <YourStacks Technologies={Technologies}  SelectedTecnologies={SelectedTecnologies} setSelectedTecnologies={setSelectedTecnologies}></YourStacks>
 
                 </div>
             </div>
