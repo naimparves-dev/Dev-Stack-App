@@ -1,8 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { Technology } from "../../Type";
 import YourStackCard from "./YourStackCard";
-import Technologies from "./Technologies";
-import TechnologyCard from "./TechnologyCard";
 
 
 
@@ -17,7 +15,7 @@ const YourStacks = ({SelectedTecnologies, setSelectedTecnologies }: YourStacksPr
     return (
         <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
 
-            <h2 className="font-semibold">
+            <h2 className="font-bold text-[16px]">
                 Your Stack
             </h2>
             <p>{SelectedTecnologies.length} Technology is Selected</p>

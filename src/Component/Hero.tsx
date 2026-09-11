@@ -7,7 +7,7 @@ export const Hero = () => {
 
         {/* Left Content */}
         <div>
-          <h2 className="text-4xl sm:text-5xl md:text-[52px] leading-[1.05] font-bold text-[#111827]">
+          <h2 className="text-4xl sm:text-5xl md:text-[60px] leading-[1.05] font-bold text-[#111827]">
             Build Your Ideal
             <br />
             <span className="bg-gradient-to-r from-[#FF512F] to-[#C026D3] bg-clip-text text-transparent">
@@ -40,7 +40,7 @@ export const Hero = () => {
           <img
             src={HeroImage}
             alt="Development Stack"
-            className="w-[280px] sm:w-[330px] md:w-[360px]"
+            className="w-[280px] sm:w-[360px] md:w-[400px]"
           />
         </div>
 

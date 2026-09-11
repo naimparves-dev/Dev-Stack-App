@@ -72,7 +72,7 @@ const YourStackCard = ({ SelectedTecnologies, setSelectedTecnologies }: YourStac
                     </div>
 
                     {/* Close */}
-                    <button onClick={() => handelRemoveStack(tech)} className="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition">
+                    <button onClick={() => handelRemoveStack(tech)} className="cursor-pointer w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition">
                         <IoClose size={20} />
                     </button>
                 </div>
@@ -82,7 +82,7 @@ const YourStackCard = ({ SelectedTecnologies, setSelectedTecnologies }: YourStac
                 {SelectedTecnologies.length > 0 && (
                     <button
                         onClick={handleRemoveAll}
-                        className="w-full mt-4 border border-red-300 text-red-500 font-medium rounded-xl py-2 hover:bg-red-50 transition-colors"
+                        className="cursor-pointer w-full mt-4 border border-red-300 text-red-500 font-medium rounded-xl py-2 hover:bg-red-50 transition-colors"
                     >
                         Remove All
                     </button>

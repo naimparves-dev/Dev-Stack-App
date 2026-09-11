@@ -73,7 +73,7 @@ const TechnologyCard = ({ techs, SelectedTecnologies, setSelectedTecnologies }: 
                     </span>
                 </div>
 
-                <button onClick={() => handelSelectedTechnologies()} className="w-full disabled:bg-gray-400 bg-[#151B2C] hover:bg-black text-white text-sm font-medium py-2.5 rounded-xl transition-colors" disabled={isSelected}>
+                <button onClick={() => handelSelectedTechnologies()} className="cursor-pointer w-full disabled:bg-gray-400 bg-[#151B2C] hover:bg-black text-white text-sm font-medium py-2.5 rounded-xl transition-colors" disabled={isSelected}>
                     {isSelected ? "✓ Added to Stack" : "Add to Stack"}
                 </button>
             </div>
