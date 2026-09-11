@@ -8,7 +8,7 @@ export interface NavProps {
 const Nav = () => {
 
     return (
-        <nav className="sticky top-0 z-50 border-b border-gray-200">
+        <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
             <div className="max-w-[1200px] mx-auto h-[72px] flex items-center justify-between font-medium">
                 <img src={Logo} alt="" className=" "/>
 
@@ -18,7 +18,7 @@ const Nav = () => {
                     </li>
 
                     <li className="cursor-pointer hover:text-[#E5005A]">
-                        Technologies
+                        <a href="#technologies">Technologies</a>
                     </li>
 
                     <li className="cursor-pointer hover:text-[#E5005A]">

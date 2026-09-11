@@ -13,7 +13,7 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesProps) => {
     const [SelectedTecnologies, setSelectedTecnologies] =useState<Technology[]>([])
 
     return (
-        <section className="max-w-[1200px] mx-auto px-5 mt-20">
+        <section id="technologies" className="max-w-[1200px] mx-auto px-5 mt-20">
             <h2 className="text-3xl font-bold text-[#111827]">
                 Explore the{" "}
                 <span className="bg-gradient-to-r from-[#FF512F] to-[#C026D3] bg-clip-text text-transparent">
