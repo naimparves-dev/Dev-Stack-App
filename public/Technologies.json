@@ -54,7 +54,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful, open-source object-relational database system.",
-    "icon": "/Icon/PostgressQL.svg",
+    "icon": "/Icon/PostgresSQL.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Popular"

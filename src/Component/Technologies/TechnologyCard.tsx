@@ -1,5 +1,6 @@
 import { type Dispatch, type SetStateAction } from "react";
 import type { Technology } from "../../Type";
+import { Bounce, toast } from "react-toastify";
 
 export interface TechnologyCardProps {
     techs: Technology;
@@ -14,6 +15,17 @@ const TechnologyCard = ({ techs, SelectedTecnologies, setSelectedTecnologies }: 
 
     const handelSelectedTechnologies = () => {
         setSelectedTecnologies([...SelectedTecnologies, techs])
+        toast.success(`${techs.name} Added to Stack`, {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        })
     }
 
     return (
@@ -62,7 +74,7 @@ const TechnologyCard = ({ techs, SelectedTecnologies, setSelectedTecnologies }: 
                 </div>
 
                 <button onClick={() => handelSelectedTechnologies()} className="w-full disabled:bg-gray-400 bg-[#151B2C] hover:bg-black text-white text-sm font-medium py-2.5 rounded-xl transition-colors" disabled={isSelected}>
-                    {isSelected ? "Selected" : "Add to Stack"}
+                    {isSelected ? "✓ Added to Stack" : "Add to Stack"}
                 </button>
             </div>
 

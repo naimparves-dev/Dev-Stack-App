@@ -1,6 +1,7 @@
 import { type Dispatch, type SetStateAction } from "react";
 import type { Technology } from "../../Type";
 import { IoClose } from "react-icons/io5";
+import { Bounce, toast } from "react-toastify";
 
 
 
@@ -17,9 +18,31 @@ const YourStackCard = ({ SelectedTecnologies, setSelectedTecnologies }: YourStac
     const handelRemoveStack = (Technology: Technology) => {
         const restStack = SelectedTecnologies.filter(SelectedTecnologie => SelectedTecnologie.id !== Technology.id)
         setSelectedTecnologies(restStack)
+        toast.success(`${Technology.name} is removed`, {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        })
     }
     const handleRemoveAll = () => {
         setSelectedTecnologies([]);
+        toast.success("remove all Stack", {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        })
     };
     return (
         <div className="space-y-3">
