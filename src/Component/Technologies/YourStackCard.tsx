@@ -1,6 +1,7 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { Technology } from "../../Type";
 import { IoClose } from "react-icons/io5";
+
 
 
 
@@ -11,12 +12,15 @@ export interface YourStackCardProps {
 }
 
 const YourStackCard = ({ SelectedTecnologies, setSelectedTecnologies }: YourStackCardProps) => {
-    const [RemoveStack, setRemoveStack]=useState([])
 
-    const handelRemoveStack=()=>{
 
-        setRemoveStack([])
+    const handelRemoveStack = (Technology: Technology) => {
+        const restStack = SelectedTecnologies.filter(SelectedTecnologie => SelectedTecnologie.id !== Technology.id)
+        setSelectedTecnologies(restStack)
     }
+    const handleRemoveAll = () => {
+        setSelectedTecnologies([]);
+    };
     return (
         <div className="space-y-3">
             {SelectedTecnologies.map((tech) => (
@@ -45,15 +49,24 @@ const YourStackCard = ({ SelectedTecnologies, setSelectedTecnologies }: YourStac
                     </div>
 
                     {/* Close */}
-                    <button
-                        className="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition"
-                    >
+                    <button onClick={() => handelRemoveStack(tech)} className="w-8 h-8 flex items-center justify-center rounded-lg text-gray-400 hover:bg-gray-100 hover:text-gray-700 transition">
                         <IoClose size={20} />
                     </button>
                 </div>
 
             ))}
+            <div>
+                {SelectedTecnologies.length > 0 && (
+                    <button
+                        onClick={handleRemoveAll}
+                        className="w-full mt-4 border border-red-300 text-red-500 font-medium rounded-xl py-2 hover:bg-red-50 transition-colors"
+                    >
+                        Remove All
+                    </button>
+                )}
+            </div>
         </div>
+
     )
 }
 

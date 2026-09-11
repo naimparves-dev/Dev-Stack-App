@@ -1,6 +1,8 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { Technology } from "../../Type";
 import YourStackCard from "./YourStackCard";
+import Technologies from "./Technologies";
+import TechnologyCard from "./TechnologyCard";
 
 
 
