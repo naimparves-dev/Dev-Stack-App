@@ -24,7 +24,7 @@ export const Footer = () => {
                             building modern software.
                         </p>
 
-                        <div className="flex justify-center md:justify-start gap-5 mt-5">
+                        <div className="flex justify-center md:justify-start gap-5 mt-5 font-semibold">
                             <a href="#" className="text-xs text-gray-700 hover:text-fuchsia-500">
                                 GitHub
                             </a>

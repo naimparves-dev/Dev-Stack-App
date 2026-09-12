@@ -29,7 +29,7 @@ const TechnologyCard = ({ techs, SelectedTecnologies, setSelectedTecnologies }: 
     }
 
     return (
-        <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div className={`bg-white border ${isSelected?"border-[#E5005A] shadow-[0_0_15px_rgba(229,0,90,0.20)]" :"border-gray-100"} rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between`}>
 
             {/* Top Section */}
             <div>
@@ -73,7 +73,7 @@ const TechnologyCard = ({ techs, SelectedTecnologies, setSelectedTecnologies }: 
                     </span>
                 </div>
 
-                <button onClick={() => handelSelectedTechnologies()} className="cursor-pointer w-full disabled:bg-gray-400 bg-[#151B2C] hover:bg-black text-white text-sm font-medium py-2.5 rounded-xl transition-colors" disabled={isSelected}>
+                <button onClick={() => handelSelectedTechnologies()} className="cursor-pointer w-full disabled:cursor-not-allowed disabled:bg-gray-400 bg-[#151B2C] hover:bg-black text-white text-sm font-medium py-2.5 rounded-xl transition-colors" disabled={isSelected}>
                     {isSelected ? "✓ Added to Stack" : "Add to Stack"}
                 </button>
             </div>
