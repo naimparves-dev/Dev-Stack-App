@@ -1,3 +1,4 @@
+import { FaBars } from "react-icons/fa";
 import Logo from "../assets/logo-text.png";
 
 
@@ -9,10 +10,15 @@ const Nav = () => {
 
     return (
         <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white">
-            <div className="max-w-[1200px] mx-auto h-[72px] flex items-center justify-between font-medium">
-                <img src={Logo} alt="" className=" "/>
+            <div className="max-w-[1200px] mx-auto h-[72px] px-4 lg:px-2 flex items-center justify-between font-medium">
+                
+                <button className="lg:hidden text-2xl">
+                        <FaBars></FaBars>
+                </button>
 
-                <ul className="flex items-center gap-7 text-sm text-[#374151]">
+                <img src={Logo} alt="" className="w-[150px] lg:w-auto"/>
+
+                <ul className="hidden lg:flex items-center gap-7 text-sm text-[#374151]">
                     <li className="text-[#E5005A] cursor-pointer">
                         Home
                     </li>
@@ -34,7 +40,7 @@ const Nav = () => {
                     </li>
                 </ul>
 
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-3 lg:gap-5">
                     <button className="text-sm text-[#374151]">
                         Sign In
                     </button>

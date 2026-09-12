@@ -13,8 +13,8 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesProps) => {
     const [SelectedTecnologies, setSelectedTecnologies] =useState<Technology[]>([])
 
     return (
-        <section id="technologies" className="max-w-[1200px] mx-auto px-5 mt-25">
-            <h2 className="text-[36px] font-bold text-[#111827]">
+        <section id="technologies" className="text-center md:text-left max-w-[1200px] mx-auto px-5 mt-10 md:mt-25">
+            <h2 className="text-[24px] md:text-[36px] font-bold text-[#111827]">
                 Explore the{" "}
                 <span className="bg-gradient-to-r from-[#FF512F] to-[#C026D3] bg-clip-text text-transparent">
                     Technologies
@@ -22,17 +22,17 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesProps) => {
             </h2>
             <p className="mt-1 text-sm text-gray-500">Pick one technology per category to build your ideal stack.</p>
 
-            <div className="grid grid-cols-12 gap-7 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-7 items-start">
 
                 {/* left side explore all*/}
-                <div className="grid col-span-9">
+                <div className="grid md:col-span-9">
                     <AllTechnologyCard Technologies={Technologies} SelectedTecnologies={SelectedTecnologies} setSelectedTecnologies={setSelectedTecnologies}></AllTechnologyCard>
 
                 </div>
 
 
                 {/* right side for your stack */}
-                <div className="grid col-span-3 mt-8 ">
+                <div className="grid md:col-span-3 mt-8 ">
                     <YourStacks Technologies={Technologies}  SelectedTecnologies={SelectedTecnologies} setSelectedTecnologies={setSelectedTecnologies}></YourStacks>
 
                 </div>
