@@ -9,8 +9,8 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10">
 
                     {/* Brand */}
-                    <div>
-                        <div className="flex items-center gap-2 mb-4">
+                    <div className="text-center md:text-left">
+                        <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
                             <div className="w-5 h-5 rounded bg-fuchsia-500 flex items-center justify-center">
                                 <span className="text-white text-[10px] font-bold">DS</span>
                             </div>
@@ -19,12 +19,12 @@ export const Footer = () => {
                             </h2>
                         </div>
 
-                        <p className="text-xs text-gray-500 leading-5 max-w-[280px]">
+                        <p className="text-xs text-gray-500 leading-5 max-w-[280px] mx-auto md:mx-0">
                             Curated tools, technologies, and resources for developers
                             building modern software.
                         </p>
 
-                        <div className="flex gap-5 mt-5">
+                        <div className="flex justify-center md:justify-start gap-5 mt-5">
                             <a href="#" className="text-xs text-gray-700 hover:text-fuchsia-500">
                                 GitHub
                             </a>
@@ -38,7 +38,7 @@ export const Footer = () => {
                     </div>
 
                     {/* Product */}
-                    <div>
+                    <div className="hidden md:block">
                         <h3 className="text-xs font-bold text-gray-900 mb-4">
                             PRODUCT
                         </h3>
@@ -57,7 +57,7 @@ export const Footer = () => {
                     </div>
 
                     {/* Company */}
-                    <div>
+                    <div className="hidden md:block">
                         <h3 className="text-xs font-bold text-gray-900 mb-4">
                             COMPANY
                         </h3>
@@ -76,7 +76,7 @@ export const Footer = () => {
                     </div>
 
                     {/* Legal */}
-                    <div>
+                    <div className="hidden md:block">
                         <h3 className="text-xs font-bold text-gray-900 mb-4">
                             LEGAL
                         </h3>
